@@ -1,0 +1,16 @@
+package com.scaler.productcatalogserviceevening.models;
+
+import com.fasterxml.jackson.annotation.JsonProperty;
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
+public class Product extends BaseModel {
+    private String name;
+    private String description;
+    private Double price;
+    private String imageUrl;
+    private Category category;
+    private Double stock;
+}
