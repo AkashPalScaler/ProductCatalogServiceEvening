@@ -18,4 +18,6 @@ public class BaseModel {
     private Date createdAt;
     @UpdateTimestamp
     private Date updatedAt;
+    @Enumerated(EnumType.STRING)
+    private State state;
 }

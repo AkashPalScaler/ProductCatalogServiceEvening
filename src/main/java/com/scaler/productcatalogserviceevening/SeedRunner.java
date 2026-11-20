@@ -28,11 +28,11 @@ public class SeedRunner implements CommandLineRunner {
         product.setPrice(new BigDecimal("9.99"));
         product.setCategory(category);
 
-        Product saved = productRepo.save(product);
-        System.out.println("Saved with id " + saved.getId());
-
-        Product found = productRepo.findById(saved.getId()).orElseThrow();
-        System.out.println("Found: " + found.getName() + " costs " + found.getPrice()
-                + " in " + found.getCategory().getName());
+//        Product saved = productRepo.save(product);
+//        System.out.println("Saved with id " + saved.getId());
+//
+//        Product found = productRepo.findById(saved.getId()).orElseThrow();
+//        System.out.println("Found: " + found.getName() + " costs " + found.getPrice()
+//                + " in " + found.getCategory().getName());
     }
 }
